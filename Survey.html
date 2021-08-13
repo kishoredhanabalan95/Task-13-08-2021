@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Survey form</title>
+    <style>
+        span {
+            color: red;
+        }
+
+        .center-data {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body style="padding: 20px;">
+    <form class="form-inline">
+        <label>Name<span>*</span></label><br>
+        <label class="sr-only" for="inlineFormInputName2">Name</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="First Name">
+        <!-- <small id="nameHelp2" class="form-text text-muted">First</small> -->
+
+        <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+        <div class="input-group mb-2 mr-sm-2">
+            <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="LastName">
+            <!-- <small id="nameHelp1" class="form-text text-muted">Last</small> -->
+        </div>
+    </form>
+    <form class="form">
+        <div class="row">
+            <div class="form-group col-md-3">
+                <label for="inputEmail4">Email<span>*</span></label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-3">
+                <label for="inputEmail4">Your Experience<span>*</span></label>
+                <div class="star-rating">
+                    <input type="radio" id="5-stars" name="rating" value="5" />
+                    <label for="5-stars" class="star">&#9733;</label>
+                    <input type="radio" id="4-stars" name="rating" value="4" />
+                    <label for="4-stars" class="star">&#9733;</label>
+                    <input type="radio" id="3-stars" name="rating" value="3" />
+                    <label for="3-stars" class="star">&#9733;</label>
+                    <input type="radio" id="2-stars" name="rating" value="2" />
+                    <label for="2-stars" class="star">&#9733;</label>
+                    <input type="radio" id="1-star" name="rating" value="1" />
+                    <label for="1-star" class="star">&#9733;</label>
+                </div>
+            </div>
+        </div>
+        <small style="font-size: 10px;">Overall, How would you rate your experience with us</small>
+        <div>
+            <label for="tableData">How Satisfied are you with<span>*</span></label>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <td scope="col"></td>
+                        <td class="center-data" style="width: 16.66%;" scope="col">Very Unsatisfied</td>
+                        <td class="center-data" style="width: 16.66%;" scope="col">Unsatisfied</td>
+                        <td class="center-data" style="width: 16.66%;" scope="col">Neutral</td>
+                        <td class="center-data" style="width: 16.66%;" scope="col">Satisfied</td>
+                        <td class="center-data" style="width: 16.66%;" scope="col">Very Satisfied</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">Purchase</td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Service</td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Company Overall</td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <label for="tableData">How likely you with<span>*</span></label>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <td scope="col"></td>
+                        <td class="center-data" style="width: 16.66%;" scope="col">Very Unsatisfied</td>
+                        <td class="center-data" style="width: 16.66%;" scope="col">Unsatisfied</td>
+                        <td class="center-data" style="width: 16.66%;" scope="col">Neutral</td>
+                        <td class="center-data" style="width: 16.66%;" scope="col">Satisfied</td>
+                        <td class="center-data" style="width: 16.66%;" scope="col">Very Satisfied</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">Buy form us again</td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Recommend our<p>product to others</p></td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Recommand our<p>company to others</p></td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                        <td class="center-data">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="form-group">
+            <label for="tableData">Additional comments or suggestion</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div>
+            <button type="button" class="btn btn-secondary">Submit</button>
+          </div>
+    </form>
+</body>
